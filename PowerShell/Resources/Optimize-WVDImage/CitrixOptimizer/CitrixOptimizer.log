@@ -1,0 +1,99 @@
+27/08/2020 14:08:50|GLOBAL|Information|1|Started source provider
+27/08/2020 14:08:51|GLOBAL|Information|1|Start Optimizer. System Info:
+Version = 2.7.0.126
+Operating system = Microsoft Windows NT 6.2.9200.0
+Processor architecture = AMD64
+27/08/2020 14:08:51|GLOBAL|Verbose|1|Checking for update ...
+27/08/2020 14:08:51|GLOBAL|Verbose|1|Current version is uptodate
+27/08/2020 14:08:51|MainViewModel|Information|1|Started source provider
+27/08/2020 14:08:51|XMLViewerPageViewModel|Information|1|Started source provider
+27/08/2020 14:08:51|MarketplaceXMLViewerPageViewModel|Information|1|Started source provider
+27/08/2020 14:08:51|GLOBAL|Verbose|1|Local Templates Directory: \\ad.demo.com\WVD\Build\CitrixOptimizer\Templates
+27/08/2020 14:08:52|GLOBAL|Information|1|The templates number need to update is 0
+27/08/2020 14:08:52|TemplateBuilderPageViewModel|Information|1|Started source provider
+27/08/2020 14:08:52|RecentTemplatesViewModel|Information|1|Started source provider
+27/08/2020 14:08:52|MainPageViewModel|Information|1|Started source provider
+27/08/2020 14:08:52|PredefiniedTemplatesViewModel|Information|1|Started source provider
+27/08/2020 14:08:52|GLOBAL|Information|1|The best template file path is: \\ad.demo.com\WVD\Build\CitrixOptimizer\Templates\Citrix_Windows_10_2004.xml
+27/08/2020 14:09:02|MainPageViewModel|Verbose|1|Selected Template Marketplace
+27/08/2020 14:09:02|MainPageViewModel|Verbose|1|Navigating to 'Pages//MarketplaceViewerPage.xaml'
+27/08/2020 14:09:09|GLOBAL|Information|1|Download file from https://ctxsupptools.citrix.com/citrixoptimizer/templates/Citrix_Windows_10_2004.xml
+27/08/2020 14:09:17|MarketplaceXMLViewerPageViewModel|Verbose|1|Navigating to 'Pages/MainPage.xaml'
+27/08/2020 14:09:17|MainPageViewModel.2|Information|1|Started source provider
+27/08/2020 14:09:17|PredefiniedTemplatesViewModel.2|Information|1|Started source provider
+27/08/2020 14:09:17|GLOBAL|Information|1|The best template file path is: \\ad.demo.com\WVD\Build\CitrixOptimizer\Templates\Citrix_Windows_10_2004.xml
+27/08/2020 14:09:22|PredefiniedTemplatesViewModel.2|Verbose|1|Selected template file 'Windows 10 build 2004 from Citrix'
+27/08/2020 14:09:22|GLOBAL|Verbose|7|Selected template file belongs to Citrix
+27/08/2020 14:09:22|GLOBAL|Verbose|7|Selected template file is intact
+27/08/2020 14:09:22|PredefiniedTemplatesViewModel.2|Verbose|1|Navigating to 'Pages/TemplateViewerPage.xaml'
+27/08/2020 14:09:22|PredefiniedTemplatesViewModel.2|Verbose|1|Navigating to 'Pages/TemplateViewerPage.xaml'
+27/08/2020 14:09:36|XMLViewerPageViewModel|Verbose|1|Invoking powershell for 'ANALYSIS'
+27/08/2020 14:09:36|XMLViewerPageViewModel|Verbose|1|Command line =  -ExecutionPolicy ByPass -NoProfile -NoExit -File "\\ad.demo.com\WVD\Build\CitrixOptimizer\CtxOptimizerEngine.ps1" -Mode Analyze -Source "C:\Users\psadmin\AppData\Local\Temp\CTXOE.tmp\cxhdgbb2.xhu\~Citrix_Windows_10_2004.xml"
+27/08/2020 14:09:36|XMLViewerPageViewModel|Verbose|1|Running script '\\ad.demo.com\WVD\Build\CitrixOptimizer\CtxOptimizerEngine.ps1' with parameters: Mode=Analyze;Source=C:\Users\psadmin\AppData\Local\Temp\CTXOE.tmp\cxhdgbb2.xhu\~Citrix_Windows_10_2004.xml;OptimizerUI=True
+27/08/2020 14:09:37|GLOBAL|Verbose|1|RunScriptAsync begin
+27/08/2020 14:09:37|GLOBAL|Verbose|1|Add powershell task
+27/08/2020 14:09:37|GLOBAL|Verbose|1|Start powershell task
+27/08/2020 14:09:37|GLOBAL|Verbose|7|Create powershell class
+27/08/2020 14:09:37|GLOBAL|Verbose|7|Add parameters to ps context
+27/08/2020 14:09:37|GLOBAL|Verbose|7|Add DataAdded eventhandler for outputCollection
+27/08/2020 14:09:37|GLOBAL|Verbose|7|Invoke ps
+27/08/2020 14:09:37|GLOBAL|Error|7|
+AuthorizationManager check failed.
+   at System.Management.Automation.AuthorizationManager.ShouldRunInternal(CommandInfo commandInfo, CommandOrigin origin, PSHost host)
+   at System.Management.Automation.CommandDiscovery.ShouldRun(ExecutionContext context, PSHost host, CommandInfo commandInfo, CommandOrigin commandOrigin)
+   at System.Management.Automation.CommandDiscovery.LookupCommandProcessor(CommandInfo commandInfo, CommandOrigin commandOrigin, Nullable`1 useLocalScope, SessionStateInternal sessionState)
+   at System.Management.Automation.CommandDiscovery.LookupCommandProcessor(String commandName, CommandOrigin commandOrigin, Nullable`1 useLocalScope)
+   at System.Management.Automation.Runspaces.Command.CreateCommandProcessor(ExecutionContext executionContext, CommandFactory commandFactory, Boolean addToHistory, CommandOrigin origin)
+   at System.Management.Automation.Runspaces.LocalPipeline.CreatePipelineProcessor()
+   at System.Management.Automation.Runspaces.LocalPipeline.InvokeHelper()
+   at System.Management.Automation.Runspaces.LocalPipeline.InvokeThreadProc()
+A command that prompts the user failed because the host program or the command type does not support user interaction. The host was attempting to request confirmation with the following message: Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without this warning message. Do you want to run \\ad.demo.com\WVD\Build\CitrixOptimizer\CtxOptimizerEngine.ps1?
+   at System.Management.Automation.Internal.Host.InternalHostUserInterface.ThrowPromptNotInteractive(String promptMessage)
+   at System.Management.Automation.Internal.Host.InternalHostUserInterface.PromptForChoice(String caption, String message, Collection`1 choices, Int32 defaultChoice)
+   at Microsoft.PowerShell.PSAuthorizationManager.RemoteFilePrompt(String path, PSHost host)
+   at Microsoft.PowerShell.PSAuthorizationManager.CheckPolicy(ExternalScriptInfo script, PSHost host, Exception& reason)
+   at Microsoft.PowerShell.PSAuthorizationManager.ShouldRun(CommandInfo commandInfo, CommandOrigin origin, PSHost host, Exception& reason)
+   at System.Management.Automation.AuthorizationManager.ShouldRunInternal(CommandInfo commandInfo, CommandOrigin origin, PSHost host)
+27/08/2020 14:09:37|XMLViewerPageViewModel|Error|7|
+Value cannot be null.
+Parameter name: path
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at Citrix.Optimizer.Pages.XMLViewerPageViewModel.InvocationComplete()
+27/08/2020 14:09:37|XMLViewerPageViewModel|Error|7|PS invocation failed to produce html report
+27/08/2020 14:09:44|GLOBAL|Verbose|7|Remove powershell task
+27/08/2020 14:09:51|XMLViewerPageViewModel|Verbose|1|Invoking powershell for 'ANALYSIS'
+27/08/2020 14:09:51|XMLViewerPageViewModel|Verbose|1|Command line =  -ExecutionPolicy ByPass -NoProfile -NoExit -File "\\ad.demo.com\WVD\Build\CitrixOptimizer\CtxOptimizerEngine.ps1" -Mode Analyze -Source "C:\Users\psadmin\AppData\Local\Temp\CTXOE.tmp\4o4wu4u5.0dl\~Citrix_Windows_10_2004.xml"
+27/08/2020 14:09:51|XMLViewerPageViewModel|Verbose|1|Running script '\\ad.demo.com\WVD\Build\CitrixOptimizer\CtxOptimizerEngine.ps1' with parameters: Mode=Analyze;Source=C:\Users\psadmin\AppData\Local\Temp\CTXOE.tmp\4o4wu4u5.0dl\~Citrix_Windows_10_2004.xml;OptimizerUI=True
+27/08/2020 14:09:51|GLOBAL|Verbose|1|RunScriptAsync begin
+27/08/2020 14:09:51|GLOBAL|Verbose|1|Add powershell task
+27/08/2020 14:09:51|GLOBAL|Verbose|1|Start powershell task
+27/08/2020 14:09:51|GLOBAL|Verbose|7|Create powershell class
+27/08/2020 14:09:51|GLOBAL|Verbose|7|Add parameters to ps context
+27/08/2020 14:09:51|GLOBAL|Verbose|7|Add DataAdded eventhandler for outputCollection
+27/08/2020 14:09:51|GLOBAL|Verbose|7|Invoke ps
+27/08/2020 14:09:51|GLOBAL|Error|7|
+AuthorizationManager check failed.
+   at System.Management.Automation.AuthorizationManager.ShouldRunInternal(CommandInfo commandInfo, CommandOrigin origin, PSHost host)
+   at System.Management.Automation.CommandDiscovery.ShouldRun(ExecutionContext context, PSHost host, CommandInfo commandInfo, CommandOrigin commandOrigin)
+   at System.Management.Automation.CommandDiscovery.LookupCommandProcessor(CommandInfo commandInfo, CommandOrigin commandOrigin, Nullable`1 useLocalScope, SessionStateInternal sessionState)
+   at System.Management.Automation.CommandDiscovery.LookupCommandProcessor(String commandName, CommandOrigin commandOrigin, Nullable`1 useLocalScope)
+   at System.Management.Automation.Runspaces.Command.CreateCommandProcessor(ExecutionContext executionContext, CommandFactory commandFactory, Boolean addToHistory, CommandOrigin origin)
+   at System.Management.Automation.Runspaces.LocalPipeline.CreatePipelineProcessor()
+   at System.Management.Automation.Runspaces.LocalPipeline.InvokeHelper()
+   at System.Management.Automation.Runspaces.LocalPipeline.InvokeThreadProc()
+A command that prompts the user failed because the host program or the command type does not support user interaction. The host was attempting to request confirmation with the following message: Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without this warning message. Do you want to run \\ad.demo.com\WVD\Build\CitrixOptimizer\CtxOptimizerEngine.ps1?
+   at System.Management.Automation.Internal.Host.InternalHostUserInterface.ThrowPromptNotInteractive(String promptMessage)
+   at System.Management.Automation.Internal.Host.InternalHostUserInterface.PromptForChoice(String caption, String message, Collection`1 choices, Int32 defaultChoice)
+   at Microsoft.PowerShell.PSAuthorizationManager.RemoteFilePrompt(String path, PSHost host)
+   at Microsoft.PowerShell.PSAuthorizationManager.CheckPolicy(ExternalScriptInfo script, PSHost host, Exception& reason)
+   at Microsoft.PowerShell.PSAuthorizationManager.ShouldRun(CommandInfo commandInfo, CommandOrigin origin, PSHost host, Exception& reason)
+   at System.Management.Automation.AuthorizationManager.ShouldRunInternal(CommandInfo commandInfo, CommandOrigin origin, PSHost host)
+27/08/2020 14:09:51|XMLViewerPageViewModel|Error|7|
+Value cannot be null.
+Parameter name: path
+   at System.IO.Directory.GetFiles(String path, String searchPattern)
+   at Citrix.Optimizer.Pages.XMLViewerPageViewModel.InvocationComplete()
+27/08/2020 14:09:51|XMLViewerPageViewModel|Error|7|PS invocation failed to produce html report
+27/08/2020 14:09:57|XMLViewerPageViewModel|Information|1|Command line option was selected:  -ExecutionPolicy ByPass -NoProfile -NoExit -File "\\ad.demo.com\WVD\Build\CitrixOptimizer\CtxOptimizerEngine.ps1" -Mode Analyze -Source "C:\Users\psadmin\AppData\Local\Temp\CTXOE.tmp\4o4wu4u5.0dl\~Citrix_Windows_10_2004.xml"
+27/08/2020 14:09:57|GLOBAL|Verbose|1|Starting asynchronous process 'powershell.exe' with args ' -ExecutionPolicy ByPass -NoProfile -NoExit -File "\\ad.demo.com\WVD\Build\CitrixOptimizer\CtxOptimizerEngine.ps1" -Mode Analyze -Source "C:\Users\psadmin\AppData\Local\Temp\CTXOE.tmp\4o4wu4u5.0dl\~Citrix_Windows_10_2004.xml"'
+27/08/2020 14:09:57|GLOBAL|Verbose|7|Remove powershell task
