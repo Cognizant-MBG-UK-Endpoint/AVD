@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}"><Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="fUseUdpPortRedirector" status="fUseUdpPortRedirector" image="11" changed="2021-03-11 13:33:19" uid="{9052D0AE-8589-4F61-BC89-65C9F3322A39}"><Properties action="R" displayDecimal="0" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations" name="fUseUdpPortRedirector" type="REG_DWORD" value="00000001"/></Registry>
+	<Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="UdpPortNumber" status="UdpPortNumber" image="11" changed="2021-03-11 13:33:51" uid="{7C51F15B-0775-4420-80DA-4B55E16EE1A9}"><Properties action="R" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations" name="UdpPortNumber" type="REG_DWORD" value="00000D3E"/></Registry>
+</RegistrySettings>
