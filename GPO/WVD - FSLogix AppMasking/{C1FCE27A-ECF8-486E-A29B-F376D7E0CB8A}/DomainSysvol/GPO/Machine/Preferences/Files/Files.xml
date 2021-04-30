@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Files clsid="{215B2E53-57CE-475c-80FE-9EEC14635851}"><File clsid="{50BE44C8-567A-4ed1-B1D0-9234FE1F38AF}" name="StartMenu.fxa" status="StartMenu.fxa" image="1" changed="2021-03-11 17:44:59" uid="{B0034F03-18A8-4BCA-BAC1-605B9F3851A3}"><Properties action="R" fromPath="\\xxxxxxxxxx\Netlogon\WVD\StartMenu.fxa" targetPath="C:\Program Files\FSLogix\Apps\Rules\StartMenu.fxa" readOnly="0" archive="1" hidden="0" suppress="0"/></File>
+	<File clsid="{50BE44C8-567A-4ed1-B1D0-9234FE1F38AF}" name="StartMenu.fxr" status="StartMenu.fxr" image="1" changed="2021-03-11 17:45:10" uid="{89FA37A4-FA0F-43A9-99E8-5239BC83E9B3}" bypassErrors="1"><Properties action="R" fromPath="\\xxxxxxxxxx\Netlogon\WVD\StartMenu.fxr" targetPath="C:\Program Files\FSLogix\Apps\Rules\StartMenu.fxr" readOnly="0" archive="1" hidden="0" suppress="0"/></File>
+</Files>

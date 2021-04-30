@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}"><Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="NoOST" status="NoOST" image="12" changed="2021-03-07 12:34:40" uid="{44A3DDBA-819E-4F52-B97D-879A31CBF565}"><Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SOFTWARE\Policies\Microsoft\Office\16.0\Outlook\OST" name="NoOST" type="REG_DWORD" value="00000002"/></Registry>
+</RegistrySettings>
